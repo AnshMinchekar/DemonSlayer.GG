@@ -1,0 +1,53 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the video container */
+.video-container {
+    position: relative;
+    height: 100vh; /* Set the video container to cover the entire viewport height */
+    overflow: hidden;
+}
+
+/* Style the video element */
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place it behind other content */
+}
+
+/* Style the content on top of the video */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    opacity: 1;
+}
+
+.black-bg{
+    background: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+/* Customize your content styles */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+}
